@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the coolest Webshop in the town!</title>
+    <link rel="stylesheet" th:href="@{styles.css}">
+</head>
+<body>
+<div class="navpanel">
+    <h1>Cool shop</h1>
+    <hr>
+</div>
+<div class="navigation">
+    <ul>
+        <li><a th:href="@{'/webshop'}">Home</a></li>
+        <li><a th:href="@{'/availableOnly'}">ONLY AVAILABLE</a></li>
+        <li><a th:href="@{'/cheapestOrder'}">CHEAPEST FIRST</a></li>
+        <li><a th:href="@{'/containsNike'}">CONTAINS NIKE</a></li>
+        <li><a th:href="@{'/stockAverage'}">AVERAGE STOCK</a></li>
+        <li><a th:href="@{'/mostExpensive'}">MOST EXPENSIVE AVAILABLE</a></li>
+    </ul>
+</div>
+<div class="searchBar">
+    <label for="search">Search for:</label>
+    <form th:action="@{/search}" th:method="post">
+        <input type="text"  id="search"  name="text" required autofocus placeholder="...something like nike">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<div>
+    <h2 th:text="${expensiveItem}"></h2>
+</div>
+
+<div>
+    <h2 th:text="${averageStock}"></h2>
+</div>
+</body>
+</html>

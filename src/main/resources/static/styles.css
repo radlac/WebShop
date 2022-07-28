@@ -1,0 +1,134 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: black;
+    font-family: "Arial Black", serif;
+    font-size: 48px;
+    font-style: italic;
+    padding-bottom: 0;
+}
+
+hr {
+    border: 1px solid black;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #ffca43;
+}
+
+.navpanel {
+    padding: 0px;
+    text-align: left;
+}
+
+.navigation {
+    padding: 15px;
+    text-align: center;
+}
+
+table {
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: darkolivegreen;
+    border: antiquewhite 10px solid;
+    width: auto;
+    height: 50px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: Arial, serif;
+    font-size: 24px;
+    border-spacing: 10px;
+}
+
+td {
+    padding: 5px 5px;
+    border: hidden;
+    border-collapse: collapse;
+    font-style: normal;
+    font-family: Arial, serif;
+    font-size: 20px;
+    width: auto;
+    text-align: left;
+}
+
+.table {
+    padding: 15px 15px;
+    text-align: center;
+
+}
+
+h2 {
+    margin-left: 15px;
+}
+
+.searchBar label {
+    font-size: 20px;
+    color: dimgrey;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.searchBar form {
+    margin-left: 15px;
+    align-items: center;
+}
+
+.searchBar input {
+    width: 80%;
+    height: 40px;
+    font-size: 30px;
+    color: black;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background: antiquewhite;
+    border: 2px solid grey;
+}
+
+.searchBar input:focus {
+    outline: none;
+    border: 2px solid dimgrey;
+
+}
+
+.searchBar button {
+    background: #333333;
+    color: lightgrey;
+    border-radius: 5px;
+    height: 50px;
+    width: auto;
+    padding: 20px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
